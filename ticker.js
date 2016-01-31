@@ -1,7 +1,7 @@
 // amount lost as of September 30, 2015
 
   var sept = new Date(2015,8,30),
-    septloss = 116476827,
+    septloss = 127970138,
     diff,
     totalloss;
 
@@ -20,9 +20,9 @@ setInterval(function(){
 
   diff = Math.abs(new Date() - sept)/1000;
 
-  // multiply seconds by $1.71 and adding to the loss since September
+  // multiply seconds by $0.87 and adding to the loss since September
 
-  var totalloss = "$" + commaSeparateNumber(((diff * 1.71) + septloss).toFixed(2));
+  var totalloss = "$" + commaSeparateNumber(((diff * .87) + septloss).toFixed(2));
 
   $('#loss').text(totalloss);
 
